@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component }  from 'react';
+import javaScriptLogo from './javaScript-logo.png';
 import './App.css';
 
-function App() {
-  return (
+class App extends Component {
+  render () {
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Kodflix
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={javaScriptLogo} alt="javaScript Logo" />
+      <br /><br /><br />
+      <div className='container'>
+        <div className='item'>ReactJs</div> 
+        <div className='item'>HTML5</div> 
+        <div className='item'>CSS3</div>
+      </div> 
+      <div className='container'>
+        <div className='item'>Node.Js</div> 
+        <div className='item'>MongoDB</div> 
+        <div className='item'>Heroku</div>  
+      </div>>
     </div>
   );
+ }
 }
 
 export default App;
